@@ -1,6 +1,7 @@
 
 import './App.css';
 import Catalogo from './components/catalogo/catalogo';
+import ItemListContainer from './components/itemlistcontainer/itemlistcontainer';
 
 import NavBar from './components/navbar/navbar';
 // import TitleComponent from './components/catalogo/title/title';
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
+      <ItemListContainer/>
       <Catalogo/>
       {/* Aquí se declaran las props */}
       {/* <TitleComponent name="Liz"/> */}
