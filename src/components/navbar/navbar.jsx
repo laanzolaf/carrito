@@ -1,5 +1,5 @@
 // imcr, para importar un componente react, borrar "React"
-import  { Component } from 'react';
+// import  { Component } from 'react';
 
 // Para crear un componente clase, borrar "React"
 
@@ -34,7 +34,12 @@ import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MoreIcon from '@mui/icons-material/MoreVert';
+
+import CartWidget from './cartwidget/cartwidget';
+
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -208,20 +213,10 @@ export default function NavBar() {
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-              <Badge badgeContent={4} color="error">
-                <MailIcon />
-              </Badge>
-            </IconButton>
-            <IconButton
-              size="large"
-              aria-label="show 17 new notifications"
-              color="inherit"
-            >
-              <Badge badgeContent={17} color="error">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
+            
+            {/* Importo CartWidget */}
+            <CartWidget/>
+
             <IconButton
               size="large"
               edge="end"

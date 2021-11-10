@@ -1,7 +1,10 @@
 
 import './App.css';
+import Catalogo from './components/catalogo/catalogo';
 
-import NavBar from './components/navbar/navbar'; 
+import NavBar from './components/navbar/navbar';
+// import TitleComponent from './components/catalogo/title/title';
+// import List from './components/list/list'; 
 
 
 
@@ -9,6 +12,10 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
+      <Catalogo/>
+      {/* Aquí se declaran las props */}
+      {/* <TitleComponent name="Liz"/> */}
+      {/* <List/> */}
 
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
