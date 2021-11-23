@@ -124,8 +124,8 @@ export default function NavBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Mi Perfil</MenuItem>
+      {/* <MenuItem onClick={handleMenuClose}>My account</MenuItem> */}
     </Menu>
   );
 
@@ -180,6 +180,12 @@ export default function NavBar() {
       </MenuItem>
     </Menu>
   );
+
+
+     
+
+
+
 
   return (
     <Box sx={{ flexGrow: 1 }}>

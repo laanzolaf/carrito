@@ -1,10 +1,11 @@
 
 // Componente tipo función, porque no hay cambio en el hola
-const TitleComponent = ({name}) => {  
+const TitleComponent = ({name, lastName}) => {  
     return (
     
         <div>
-            <h1>Te doy la bienvenida {name}</h1>
+            <h1> Te doy la bienvenida {name} {lastName} </h1>
+           
         </div>
             );
 
